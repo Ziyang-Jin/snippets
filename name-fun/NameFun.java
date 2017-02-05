@@ -17,7 +17,7 @@ public class NameFun {
             count++;
             System.out.println(count + ": " + permutation);
         } else {
-            for(int i = 0; i < remain.length(); i++) {
+            for (int i = 0; i < remain.length(); i++) {
                 String newPermutation = permutation + remain.charAt(i);
                 String newRemain = remain.substring(0, i) + remain.substring(i+1);
                 printPermutation(newPermutation, newRemain);
